@@ -14,7 +14,7 @@ Launch Bash-scripts directly from [RetroArch](http://www.libretro.com/) to launc
   make
   ```
 
-2. Copy the core file to the RetroArch cores directory
+2. Copy the core file to the RetroArch cores directory (Path may differ depending on distribution. Check your system for correct path.)
   ``` bash
   cp bash_launcher_libretro.so /usr/lib/libretro/
   ```
