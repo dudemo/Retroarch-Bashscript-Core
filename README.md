@@ -8,7 +8,7 @@ Launch Bash-scripts directly from [RetroArch](http://www.libretro.com/) to launc
 
 1. Compile the core
   ``` bash
-  git clone https://github.com/SwedishGojira/libretro-bash-launcher.git
+  git clone https://github.com/dudemo/Retroarch-Bashscript-Core.git
   cd libretro-bash-launcher
   make
   ```
