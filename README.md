@@ -1,9 +1,8 @@
-# libretro-bash-launcher
+# Retroarch-Bashscript-Core
 Based on [libretro-dolphin-launcher](https://github.com/RobLoach/libretro-dolphin-launcher).
 
-Launch Bash-scripts directly from [RetroArch](http://www.libretro.com/) to launch your Linux games.
+Launch Bash-scripts directly from [RetroArch](http://www.libretro.com/) to launch your Linux games. Usable on the Arcade Legends Ultimate if used properly.
 
-![Bash Launcher Screenshot](screenshot.jpg)
 
 ## Installation
 
@@ -14,22 +13,26 @@ Launch Bash-scripts directly from [RetroArch](http://www.libretro.com/) to launc
   make
   ```
 
-2. Copy the core file to the RetroArch cores directory (Path may differ depending on distribution. Check your system for correct path.)
+2. Compile a bash script to launch whatever you would like to launch on the Legends Ultimate.
   ``` bash
-  cp bash_launcher_libretro.so /usr/lib/libretro/
+  This can literally be whatever you want, but you must compile the required libraries
+  and binaries and link them inside the script you intend to build into the UCE.
   ```
 
 ## Usage
 
-1. Scan Bash-scripts in RetroArch
-
-2. Launch the script directly from the RetroArch menu
-
-3. Alternatively, you can run games through the command line
   ``` bash
-  retroarch -L bash_launcher_libretro.so script.sh
+- Open AddOn Tool. 
+- Create a game title (AddOn_XXXXX)
+- Create or find boxart and select it
+- Create or find bezel art and select it
+- Select the built core
+- When you select your game ROM, in the lower right hand corner, select the filetype drop-down and select 
+   "Any file type". Now select your script.
+- Build the UCE
+- Put the resulting UCE on a USB drive and run AddOn X Tool on the drive
+- Open the UCE in CoinOPS X
   ```
-
 ## Contributors
 
 - [SwedishGojira](http://github.com/swedishgojira)
